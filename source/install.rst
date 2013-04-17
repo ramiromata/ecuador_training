@@ -32,23 +32,23 @@ Copiar los cookbooks y los ficheros solo.rb y dna.json al directorio recién cre
 
 	/
 	\- var
-		\- chef-solo
-		    |- dna.json
-		    |- solo.rb
-		    \- cookbooks
-		        |- apache2  
-		        |- apt
-		        |- ark
-		        |- build-essential
-		        |- database
-		        |- gis
-		        |- java
-		        |- logrotate
-		        |- omnibus_updater
-		        |- openssl
-		        |- postgresql
-		        |- tomcat
-		        \- unredd-nfms-portal
+	    \- chef-solo
+	        |- dna.json
+	        |- solo.rb
+	        \- cookbooks
+	            |- apache2
+	            |- apt
+	            |- ark
+	            |- build-essential
+	            |- database
+	            |- gis
+	            |- java
+	            |- logrotate
+	            |- omnibus_updater
+	            |- openssl
+	            |- postgresql
+	            |- tomcat
+	            \- unredd-nfms-portal
 
 Ejecutar desde el directorio /var/chef-solo::
 
