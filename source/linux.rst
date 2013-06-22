@@ -158,4 +158,28 @@ A continuación mostramos algunos comandos útiles en linux:
 
 	$ unzip ruta_fichero.zip
 
-- chgrp, chown y chmod
+- chgrp: cambia el grupo de usuarios de un archivo o directorio en sistemas tipo UNIX.
+  Cada archivo de Unix tiene un identificador de usuario (UID) y un identificador de grupo (GID)
+  que se corresponden con el usuario y el grupo de quien lo creó.
+
+  El usuario root puede cambiar a cualquier archivo el grupo. Los demás usuarios sólo pueden
+  hacerlo con los archivos propios y grupos a los que pertenezca.::
+	
+	$ chgrp nuevogrp archivo1 [ archivo2 archivo3...]
+
+	Cambia el grupo de archivo1 archivo2, etc. que pasará a ser nuevogrp
+
+	$ chgrp -R nuevogrp directorio
+
+	Cambia el grupo para que pase a ser nuevogrp a directorio, todos los archivos y subdirectorios contenidos en él, cambiándolos también de forma recursiva en todos archivos de los subdirectorios.
+
+- chown: cambiar el propietario de un archivo o directorio::
+
+	$ chown nuevousr archivo1 [ archivo2 archivo3...]
+	$ chown -R nuevousr directorio
+
+
+
+- chmod: permite cambiar los permisos de acceso de un archivo o directorio::
+
+	$ chmod [modificadores] permisos archivo/directorio
