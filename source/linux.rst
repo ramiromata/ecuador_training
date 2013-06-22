@@ -72,7 +72,7 @@ A continuación mostramos algunos comandos útiles en linux:
 
 	$ nano ruta_fichero_a_editar
 
-- locate: Localiza ficheros en el sistema operativo::
+- locate: Localiza ficheros en el sistema de archivos::
 
 	$ locate parte_del_nombre_del_fichero
 
@@ -82,7 +82,15 @@ A continuación mostramos algunos comandos útiles en linux:
   ficheros, que toma mucho tiempo. Es por esto que *locate* funciona muy rápido pero puede que no 
   encuentre los ficheros creados recientemente. Para estos, habrá que esperar a que se produzca un
   escaneo programado.
-	
+
+- find: Localiza ficheros en el sistema de archivos::
+
+	$ find ruta -name nombre_del_fichero
+
+  A diferencia de locate, el comando find recorrerá el sistema de archivos cada vez que se lo ejecute,
+  sin emplear índices. Por esa razón, si bien es mucho más lento el resultado, puede hallar ficheros que 
+  no se hayan indexado, por ejemplo, los ficheros creados recientemente.
+
 - id: Muestra la identidad actual del usuario::
 
 	$ id
